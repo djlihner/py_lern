@@ -1,10 +1,6 @@
 from geom2d import *
 
-# сконструировали два объекта
-a = Point(0, 0)
-b = Point(3, 4)
-# вызвали метод
-print(a.distance(b))
-# убедилиись, что работает операция сравнения
-print(a == b)
-print(a == Point(0, 0))
+l1 = [Point(0, 0), Point(1, 2), Point(2, 1)]
+l2 = [Point(0, 0), Point(1, 2), Point(2, 1)]
+
+print(l1 == l2)
