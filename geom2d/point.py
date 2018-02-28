@@ -13,3 +13,6 @@ class Point:  # класс
 
     def __eq__(self, other): # переопределили операцию сранения
         return self.x == other.x and self.y == other.y
+
+    def __lt__(self, other):
+        return self.y < other.y
