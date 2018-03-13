@@ -1,17 +1,8 @@
 from geom2d import *
 
-l1 = [Point(0, 0), Point(1, 2), Point(2, 1)]
+l1 = [Point(3, 1), Point(1, 2), Point(2, 1)]
 
-
-def x(p):
-    return p.x
-
-
-def y(p):
-    return p.y
-
-
-l2 = sorted(l1, key=x)
+l2 = sorted(l1, key=lambda p: p.distance(Point(0, 0)))
 
 print('ok')
 print(l1)
